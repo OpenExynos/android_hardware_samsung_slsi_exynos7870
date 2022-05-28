@@ -32,14 +32,14 @@ struct ExynosSensorInfoBase *createExynosCamera1SensorInfo(int camId)
     }
     ALOGI("INFO(%s[%d]):sensor ID(%d)", __FUNCTION__, __LINE__, sensorName);
     switch (sensorName) {
-    case SENSOR_NAME_S5K5E2:
-        sensorInfo = new ExynosSensorS5K5E2();
+    case SENSOR_NAME_S5K5E3:
+        sensorInfo = new ExynosSensorS5K5E3();
         break;
-    case SENSOR_NAME_S5K3M2:
-        sensorInfo = new ExynosSensorS5K3M2();
+    case SENSOR_NAME_S5K3P3:
+        sensorInfo = new ExynosSensorS5K3P3();
         break;
-    case SENSOR_NAME_S5K5E8:
-        sensorInfo = new ExynosSensorS5K5E8();
+    case SENSOR_NAME_S5K3L2:
+        sensorInfo = new ExynosSensorS5K3L2();
         break;
     default:
         android_printAssert(NULL, LOG_TAG, "ASSERT(%s[%d]):Unknown sensor(%d), create default sensor, assert!!!!",
@@ -94,6 +94,24 @@ struct ExynosSensorInfoBase *createExynosCamera1SensorInfo(int camId)
     return sensorInfo;
 }
 
+ExynosSensorS5K3L2::ExynosSensorS5K3L2()
+{
+    effectList =
+          EFFECT_NONE
+        | EFFECT_MONO
+        | EFFECT_NEGATIVE
+        /* | EFFECT_SOLARIZE */
+        | EFFECT_SEPIA
+        | EFFECT_POSTERIZE
+        | EFFECT_COLD_VINTAGE
+        | EFFECT_BLUE
+        | EFFECT_RED_YELLOW
+        /* | EFFECT_AQUA */
+        /* | EFFECT_WHITEBOARD */
+        /* | EFFECT_BLACKBOARD */
+        ;
+};
+
 ExynosSensorS5K3M2::ExynosSensorS5K3M2()
 {
     effectList =
@@ -112,6 +130,24 @@ ExynosSensorS5K3M2::ExynosSensorS5K3M2()
         ;
 };
 
+ExynosSensorS5K3P3::ExynosSensorS5K3P3()
+{
+    effectList =
+          EFFECT_NONE
+        | EFFECT_MONO
+        | EFFECT_NEGATIVE
+        /* | EFFECT_SOLARIZE */
+        | EFFECT_SEPIA
+        | EFFECT_POSTERIZE
+        | EFFECT_COLD_VINTAGE
+        | EFFECT_BLUE
+        | EFFECT_RED_YELLOW
+        /* | EFFECT_AQUA */
+        /* | EFFECT_WHITEBOARD */
+        /* | EFFECT_BLACKBOARD */
+        ;
+};
+
 ExynosSensorS5K5E2::ExynosSensorS5K5E2()
 {
     effectList =
@@ -125,6 +161,24 @@ ExynosSensorS5K5E2::ExynosSensorS5K5E2()
         | EFFECT_BLUE
         | EFFECT_RED_YELLOW
         | EFFECT_AQUA
+        /* | EFFECT_WHITEBOARD */
+        /* | EFFECT_BLACKBOARD */
+        ;
+};
+
+ExynosSensorS5K5E3::ExynosSensorS5K5E3()
+{
+    effectList =
+          EFFECT_NONE
+        | EFFECT_MONO
+        | EFFECT_NEGATIVE
+        /* | EFFECT_SOLARIZE */
+        | EFFECT_SEPIA
+        | EFFECT_POSTERIZE
+        | EFFECT_COLD_VINTAGE
+        | EFFECT_BLUE
+        | EFFECT_RED_YELLOW
+        /* | EFFECT_AQUA */
         /* | EFFECT_WHITEBOARD */
         /* | EFFECT_BLACKBOARD */
         ;
