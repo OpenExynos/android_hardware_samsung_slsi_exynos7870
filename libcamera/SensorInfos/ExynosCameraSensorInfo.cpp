@@ -112,24 +112,6 @@ ExynosSensorS5K3L2::ExynosSensorS5K3L2()
         ;
 };
 
-ExynosSensorS5K3M2::ExynosSensorS5K3M2()
-{
-    effectList =
-          EFFECT_NONE
-        | EFFECT_MONO
-        | EFFECT_NEGATIVE
-        /* | EFFECT_SOLARIZE */
-        | EFFECT_SEPIA
-        | EFFECT_POSTERIZE
-        | EFFECT_COLD_VINTAGE
-        | EFFECT_BLUE
-        | EFFECT_RED_YELLOW
-        | EFFECT_AQUA
-        /* | EFFECT_WHITEBOARD */
-        /* | EFFECT_BLACKBOARD */
-        ;
-};
-
 ExynosSensorS5K3P3::ExynosSensorS5K3P3()
 {
     effectList =
@@ -148,24 +130,6 @@ ExynosSensorS5K3P3::ExynosSensorS5K3P3()
         ;
 };
 
-ExynosSensorS5K5E2::ExynosSensorS5K5E2()
-{
-    effectList =
-          EFFECT_NONE
-        | EFFECT_MONO
-        | EFFECT_NEGATIVE
-        /* | EFFECT_SOLARIZE */
-        | EFFECT_SEPIA
-        | EFFECT_POSTERIZE
-        | EFFECT_COLD_VINTAGE
-        | EFFECT_BLUE
-        | EFFECT_RED_YELLOW
-        | EFFECT_AQUA
-        /* | EFFECT_WHITEBOARD */
-        /* | EFFECT_BLACKBOARD */
-        ;
-};
-
 ExynosSensorS5K5E3::ExynosSensorS5K5E3()
 {
     effectList =
@@ -179,24 +143,6 @@ ExynosSensorS5K5E3::ExynosSensorS5K5E3()
         | EFFECT_BLUE
         | EFFECT_RED_YELLOW
         /* | EFFECT_AQUA */
-        /* | EFFECT_WHITEBOARD */
-        /* | EFFECT_BLACKBOARD */
-        ;
-};
-
-ExynosSensorS5K5E8::ExynosSensorS5K5E8()
-{
-    effectList =
-          EFFECT_NONE
-        | EFFECT_MONO
-        | EFFECT_NEGATIVE
-        /* | EFFECT_SOLARIZE */
-        | EFFECT_SEPIA
-        | EFFECT_POSTERIZE
-        | EFFECT_COLD_VINTAGE
-        | EFFECT_BLUE
-        | EFFECT_RED_YELLOW
-        | EFFECT_AQUA
         /* | EFFECT_WHITEBOARD */
         /* | EFFECT_BLACKBOARD */
         ;

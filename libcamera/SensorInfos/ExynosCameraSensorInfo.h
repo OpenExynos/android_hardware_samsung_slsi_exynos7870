@@ -47,19 +47,9 @@ public:
     ExynosSensorS5K3L2();
 };
 
-struct ExynosSensorS5K3M2 : public ExynosSensorS5K3M2Base {
-public:
-    ExynosSensorS5K3M2();
-};
-
 struct ExynosSensorS5K3P3 : public ExynosSensorS5K3P3Base {
 public:
     ExynosSensorS5K3P3();
-};
-
-struct ExynosSensorS5K5E2 : public ExynosSensorS5K5E2Base {
-public:
-    ExynosSensorS5K5E2();
 };
 
 struct ExynosSensorS5K5E3 : public ExynosSensorS5K5E3Base {
@@ -67,9 +57,5 @@ public:
     ExynosSensorS5K5E3();
 };
 
-struct ExynosSensorS5K5E8 : public ExynosSensorS5K5E8Base {
-public:
-    ExynosSensorS5K5E8();
-};
 }; /* namespace android */
 #endif
